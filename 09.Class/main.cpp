@@ -3,20 +3,21 @@
 using namespace std;
 
 class Person {
-public:
-    string name;
-    int age ;
-    int weight;
-    int height ;
-    
-    void userInfo() {
-        cout << "NAME : " << name << endl;
-        cout << "AGE : " << age << endl;
-        cout << "WEIGHT : " << weight << endl;
-        cout << "HEIGHT : " << height << endl;
-    }
+    public:
+        string name;
+        int age ;
+        int weight;
+        int height ;
+        
+        void userInfo() {
+            cout << "NAME : " << name << endl;
+            cout << "AGE : " << age << endl;
+            cout << "WEIGHT : " << weight << endl;
+            cout << "HEIGHT : " << height << endl;
+        }
 };
-int main(void){
+
+int main(){
     Person user1, user2;
     user1.age = 25 ;
     user1.weight = 72;
@@ -31,5 +32,8 @@ int main(void){
     user1.userInfo();
     cout << endl;
     user2.userInfo();
+    
     return 0;
 }
+
+
