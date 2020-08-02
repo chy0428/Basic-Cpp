@@ -4,7 +4,7 @@ using namespace std;
 
 class Animal {
 public:
-    void Information() {
+    virtual void Information() { // virtual 선언시 : 자식 클래스에서 오버라이딩 가능
         cout << "Animal Class" << endl;
     }
 };
@@ -15,7 +15,7 @@ public:
         cout << "Dog Class" << endl;
     }
     void Cry() {
-        cout << "Bark Bark !!" << endl;
+        cout << "Bark Bark !! " << endl;
     }
 };
 
@@ -47,6 +47,7 @@ int main(void){
     
     d->Information();
     d->Cry();
+    
     cout << endl;
     c->Information();
     c->Cry();
