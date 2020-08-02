@@ -21,4 +21,3 @@ void swap(DTYPE &x, DTYPE &y) {
     y = tmp;
 }
 
-
