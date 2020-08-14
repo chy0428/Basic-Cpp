@@ -11,7 +11,8 @@ void print(vector<int> a, vector<int>::iterator p) {
 }
 int main(void) {
     // insert code here...
-    vector<int> a = {1,4,2,6};
+    int tmp[] = {1,4,2,6};
+    vector<int> a (tmp, tmp+4);
     vector<int>::iterator p ;
     
     cout << "< INSERT >" << endl;
